@@ -407,10 +407,10 @@ npm run build
 
 Running the `build` script will generate the application into the `dist/` directory.
 
-[auth-instance]: https://github.com/SolarNetwork/solarnetwork-example/blob/1.3.0/TypeScript/chart-billboard/src/main/ts/sn.ts#L17
-[auth-headers]: https://github.com/SolarNetwork/solarnetwork-example/blob/1.3.0/TypeScript/chart-billboard/src/main/ts/sn.ts#L42-L55
+[auth-instance]: https://github.com/SolarNetwork/solarnetwork-example-ts-chart-billboard/blob/1.0.0/src/main/ts/sn.ts#L17
+[auth-headers]: https://github.com/SolarNetwork/solarnetwork-example-ts-chart-billboard/blob/1.0.0/src/main/ts/sn.ts#L42-L55
 [billboard]: https://naver.github.io/billboard.js/
-[create-datum-filter]: https://github.com/SolarNetwork/solarnetwork-example/blob/1.3.0/TypeScript/chart-billboard/src/main/ts/sn.ts#L85-L94
+[create-datum-filter]: https://github.com/SolarNetwork/solarnetwork-example-ts-chart-billboard/blob/1.0.0/src/main/ts/sn.ts#L85-L94
 [datum-list]: https://github.com/SolarNetwork/solarnetwork/wiki/SolarQuery-API#datum-list
 [datum-prop-class]: https://github.com/SolarNetwork/solarnetwork/wiki/SolarNet-API-global-objects#datum-property-classifications
 [datum-reading]: https://github.com/SolarNetwork/solarnetwork/wiki/SolarQuery-API#datum-reading
@@ -419,14 +419,14 @@ Running the `build` script will generate the application into the `dist/` direct
 [datum-stream-datum-list]: https://github.com/SolarNetwork/solarnetwork/wiki/SolarQuery-Stream-API#datum-stream-datum-list
 [datum-stream-reading-list]: https://github.com/SolarNetwork/solarnetwork/wiki/SolarQuery-Stream-API#datum-stream-reading-list
 [datum-stream-reading-list-res]: https://github.com/SolarNetwork/solarnetwork/wiki/SolarQuery-Stream-API#datum-stream-reading-list-response
-[discover-sources]: https://github.com/SolarNetwork/solarnetwork-example/blob/1.3.0/TypeScript/chart-billboard/src/main/ts/sn.ts#L96-L119
+[discover-sources]: https://github.com/SolarNetwork/solarnetwork-example-ts-chart-billboard/blob/1.0.0/src/main/ts/sn.ts#L96-L119
 [fetch]: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
 [sn-api-auth]: https://github.com/SolarNetwork/solarnetwork/wiki/SolarNet-API-authentication-scheme-V2
-[find-sources-url]: https://github.com/SolarNetwork/solarnetwork-example/blob/1.3.0/TypeScript/chart-billboard/src/main/ts/sn.ts#L96
-[render-chart]: https://github.com/SolarNetwork/solarnetwork-example/blob/1.3.0/TypeScript/chart-billboard/src/main/ts/main.ts#L30-L33
+[find-sources-url]: https://github.com/SolarNetwork/solarnetwork-example-ts-chart-billboard/blob/1.0.0/src/main/ts/sn.ts#L96
+[render-chart]: https://github.com/SolarNetwork/solarnetwork-example-ts-chart-billboard/blob/1.0.0/src/main/ts/main.ts#L30-L33
 [reportable-node-sources]: https://github.com/SolarNetwork/solarnetwork/wiki/SolarQuery-API#reportable-node-sources
 [reportable-node-sources-res]: https://github.com/SolarNetwork/solarnetwork/wiki/SolarQuery-API#reportable-node-sources-response
 [sn-api-core]: https://www.npmjs.com/package/solarnetwork-api-core
-[sn-api-core-dep]: https://github.com/SolarNetwork/solarnetwork-example/blob/1.3.0/TypeScript/chart-billboard/package.json#L44
-[import-sn-auth]: https://github.com/SolarNetwork/solarnetwork-example/blob/1.3.0/TypeScript/chart-billboard/src/main/ts/sn.ts#L6-L9
-[save-creds]: https://github.com/SolarNetwork/solarnetwork-example/blob/1.3.0/TypeScript/chart-billboard/src/main/ts/sn.ts#L77-L78
+[sn-api-core-dep]: https://github.com/SolarNetwork/solarnetwork-example-ts-chart-billboard/blob/1.0.0/package.json#L44
+[import-sn-auth]: https://github.com/SolarNetwork/solarnetwork-example-ts-chart-billboard/blob/1.0.0/src/main/ts/sn.ts#L6-L9
+[save-creds]: https://github.com/SolarNetwork/solarnetwork-example-ts-chart-billboard/blob/1.0.0/src/main/ts/sn.ts#L77-L78
