@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="img/solarnetwork-favicon.svg"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SolarNetwork Example: TypeScript Chart with billboard.js</title>
+	</head>
+	<body>
+		<div class="container py-3 px-3 mx-auto">
+			<div class="row">
+				<div class="offset-md-4 col-md-8">
+					<h1>
+						SolarNetwork Example: TypeScript Chart with billboard.js
+					</h1>
+					<p>
+						This is an example app built with TypeScript that
+						demonstrates how to use the
+						<a
+							href="https://github.com/SolarNetwork/solarnetwork/wiki/SolarQuery-API"
+							target="_blank"
+							>SolarNetwork API</a
+						>
+						with the help of the
+						<a
+							href="https://www.npmjs.com/package/solarnetwork-api-core"
+							target="_blank"
+							>solarnetwork-api-core</a
+						>
+						library to make authenticated API calls that drive the
+						generation of an area chart using the
+						<a
+							href="https://naver.github.io/billboard.js/"
+							target="_blank"
+							>billboard.js</a
+						>
+						library. This is a good way for a front-end developer
+						new to SolarNetwork to learn about using the API. Fill
+						in the query details in this form and click the
+						<b>Generate</b> button to generate a chart.
+					</p>
+					<p>
+						See the
+						<a
+							href="https://github.com/SolarNetwork/solarnetwork-example/tree/develop/TypeScript/chart-billboard"
+							target="_blank"
+							>project on Github</a
+						>
+						for more information.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="container py-3 px-3 mx-auto">
+			<div class="row g-5">
+				<div class="col-md-4">
+					<div class="p-3" id="data-settings-tab-content">
+						<form
+							id="data-sn-settings"
+							role="tabpanel"
+							aria-labelledby="data-sn-tab"
+							tabindex="0"
+						>
+							<div class="row">
+								<div class="col">
+									<label for="startDate" class="form-label"
+										>Start Date</label
+									>
+									<input
+										type="date"
+										class="form-control"
+										id="startDate"
+									/>
+								</div>
+							</div>
+							<div class="row my-3">
+								<div class="col">
+									<label for="endDate" class="form-label"
+										>End Date</label
+									>
+									<input
+										type="date"
+										class="form-control"
+										id="endDate"
+									/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col">
+									<label for="snToken" class="form-label"
+										>SolarNetwork Token</label
+									>
+									<input
+										type="text"
+										class="form-control"
+										id="snToken"
+									/>
+								</div>
+							</div>
+							<div class="row my-3">
+								<div class="col">
+									<label
+										for="snTokenSecret"
+										class="form-label"
+										>SolarNetwork Secret</label
+									>
+									<input
+										type="password"
+										class="form-control"
+										id="snTokenSecret"
+									/>
+								</div>
+							</div>
+							<div class="row my-3">
+								<div class="col">
+									<label for="snNodeId" class="form-label"
+										>Node ID</label
+									>
+									<input
+										type="number"
+										class="form-control"
+										id="snNodeId"
+									/>
+								</div>
+							</div>
+							<div class="row my-3">
+								<div class="col">
+									<label for="snSourceId" class="form-label"
+										>Source ID</label
+									>
+									<select
+										class="form-control"
+										id="snSourceId"
+									></select>
+								</div>
+							</div>
+							<div class="row my-3">
+								<div class="col">
+									<label
+										for="snDatumProperty"
+										class="form-label"
+										>Datum Property</label
+									>
+									<select
+										class="form-control"
+										id="snDatumProperty"
+									></select>
+								</div>
+							</div>
+							<div class="row my-3">
+								<div class="col">
+									<label
+										for="snDatumPropertyScale"
+										class="form-label"
+										>Unit scale
+										<button
+											type="button"
+											class="btn btn-sm"
+											data-bs-toggle="popover"
+											data-bs-content="The datum property unit scale. For example enter 1000 if the datum property values represent kilo- units, such as kWh."
+										>
+											<i
+												class="bi bi-info-circle"
+											></i></button
+									></label>
+									<input
+										type="number"
+										class="form-control"
+										id="snDatumPropertyScale"
+										value="1"
+									/>
+								</div>
+							</div>
+
+							<div class="d-grid my-3">
+								<button
+									type="button"
+									class="btn btn-primary"
+									id="generate-chart-button"
+									disabled
+								>
+									Generate
+								</button>
+							</div>
+						</form>
+					</div>
+					<div
+						id="app-version"
+						class="d-none text-secondary my-3"
+						aria-hidden="true"
+					>
+						<small
+							>Version <span class="data-app-version"></span>.
+							Source on
+							<a
+								href="https://github.com/SolarNetwork/solarnetwork-example/tree/develop/TypeScript/chart-billboard/"
+								class="link-secondary"
+								target="_blank"
+								>GitHub</a
+							>.</small
+						>
+					</div>
+				</div>
+				<main class="col-md-8">
+					<div id="chart"></div>
+				</main>
+			</div>
+		</div>
+
+		<script type="module" src="ts/main.ts"></script>
+	</body>
+</html>

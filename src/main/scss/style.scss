@@ -1,0 +1,22 @@
+@import "bootstrap/scss/bootstrap";
+
+$bootstrap-icons-font-dir: "../../../node_modules/bootstrap-icons/font/fonts";
+@import "bootstrap-icons/font/bootstrap-icons.scss";
+
+#data-settings-tab-content {
+	background-color: #f3f3f3;
+	border-radius: 8px;
+	border: 1px solid $nav-tabs-border-color;
+}
+
+label {
+	font-weight: bold;
+}
+
+label .btn-sm {
+	margin-top: -2px;
+}
+
+#app-version {
+	font-size: 80%;
+}
