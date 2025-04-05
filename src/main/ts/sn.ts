@@ -2,13 +2,13 @@ import {
 	Aggregations,
 	DatumFilter,
 	DatumReadingTypes,
-} from "solarnetwork-api-core/lib/domain";
+} from "solarnetwork-api-core/domain";
 import {
 	AuthorizationV2Builder,
 	SolarQueryApi,
-} from "solarnetwork-api-core/lib/net";
-import { DatumStreamMetadataRegistry } from "solarnetwork-api-core/lib/util";
-import { datumForStreamData } from "solarnetwork-api-core/lib/util/datum";
+} from "solarnetwork-api-core/net";
+import { DatumStreamMetadataRegistry } from "solarnetwork-api-core/util";
+import { datumForStreamData } from "solarnetwork-api-core/util/datum";
 
 import { SnSettingsFormElements } from "./forms";
 import { GeneralDatum } from "./utils";
@@ -114,7 +114,7 @@ async function loadSources(event: Event) {
 		}
 		settingsForm.snSourceId.selectedIndex = 0;
 		settingsForm.snSourceId.dispatchEvent(
-			new Event("change", { bubbles: true })
+			new Event("change", { bubbles: true }),
 		);
 	}
 }
@@ -150,7 +150,7 @@ async function loadSourceProperties() {
 		settingsForm.snDatumProperty.selectedIndex > 0
 			? settingsForm.snDatumProperty.options[
 					settingsForm.snDatumProperty.selectedIndex
-			  ]!.value
+				]!.value
 			: undefined;
 	// clear out and re-populate the property names menu
 	while (settingsForm.snDatumProperty.length) {
@@ -175,7 +175,7 @@ async function loadSourceProperties() {
 	}
 	settingsForm.snDatumProperty.selectedIndex = newSelectedIndex;
 	settingsForm.snDatumProperty.dispatchEvent(
-		new Event("change", { bubbles: true })
+		new Event("change", { bubbles: true }),
 	);
 }
 

@@ -427,6 +427,6 @@ Running the `build` script will generate the application into the `dist/` direct
 [reportable-node-sources]: https://github.com/SolarNetwork/solarnetwork/wiki/SolarQuery-API#reportable-node-sources
 [reportable-node-sources-res]: https://github.com/SolarNetwork/solarnetwork/wiki/SolarQuery-API#reportable-node-sources-response
 [sn-api-core]: https://www.npmjs.com/package/solarnetwork-api-core
-[sn-api-core-dep]: https://github.com/SolarNetwork/solarnetwork-example-ts-chart-billboard/blob/1.0.0/package.json#L44
+[sn-api-core-dep]: https://github.com/SolarNetwork/solarnetwork-example-ts-chart-billboard/blob/1.0.0/package.json#L45
 [import-sn-auth]: https://github.com/SolarNetwork/solarnetwork-example-ts-chart-billboard/blob/1.0.0/src/main/ts/sn.ts#L6-L9
 [save-creds]: https://github.com/SolarNetwork/solarnetwork-example-ts-chart-billboard/blob/1.0.0/src/main/ts/sn.ts#L77-L78
